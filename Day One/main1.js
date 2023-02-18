@@ -11,11 +11,17 @@ const elves = readFileSync("dayOneExample.txt", { encoding: "utf-8" }) // read d
   function part1() {
     const calories = elves.map((elf) => {
       const calories = elf.split("\n").map(Number);
-      const sum = calories.reduce((previous, current) => previous + current, 0);
+     return calories.reduce((previous, current) => previous + current, 0); 
     });
   
-    console.log(sum);
+  console.log(Math.max(...calories));
   }
+function part2(){
+//Find the top three Elves carrying the most Calories
 
+
+
+
+}
   
   part1()
